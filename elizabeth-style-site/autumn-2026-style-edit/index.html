@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Autumn 2026 Style Edit | Elizabeth Style</title>
+  <meta name="description" content="The Autumn 2026 Style Edit by Elizabeth Style — an editorial fashion edit with elevated wardrobe direction, refined styling notes, and a direct path to subscribe." />
+  <style>
+    :root {
+      --bg: #f7f2ee;
+      --bg-soft: #fbf8f5;
+      --panel: rgba(255,255,255,0.78);
+      --panel-strong: rgba(255,255,255,0.92);
+      --text: #191615;
+      --muted: #6d625d;
+      --line: rgba(25,22,21,0.12);
+      --line-strong: rgba(25,22,21,0.22);
+      --accent: #b48a8d;
+      --accent-deep: #8d6467;
+      --shadow: 0 18px 50px rgba(36, 24, 19, 0.10);
+      --max: 1240px;
+      --serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, "Times New Roman", serif;
+      --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top left, rgba(180,138,141,0.15), transparent 35%),
+        radial-gradient(circle at top right, rgba(221,201,188,0.22), transparent 30%),
+        linear-gradient(180deg, #fbf7f3 0%, var(--bg) 40%, #f5efea 100%);
+      color: var(--text);
+      font-family: var(--sans);
+      line-height: 1.55;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    .shell {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      backdrop-filter: blur(18px);
+      background: rgba(247,242,238,0.72);
+      border-bottom: 1px solid rgba(25,22,21,0.08);
+    }
+
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      min-height: 70px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .brand-mark {
+      width: 40px;
+      height: 40px;
+      border: 1px solid var(--line-strong);
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      font-family: var(--serif);
+      color: var(--text);
+      background: rgba(255,255,255,0.55);
+      font-size: 0.95rem;
+      letter-spacing: 0.08em;
+    }
+
+    .topbar-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .link-minimal {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 22px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      letter-spacing: 0.02em;
+      transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+      cursor: pointer;
+      border: 1px solid transparent;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+
+    .btn-primary {
+      background: var(--text);
+      color: #fff;
+      box-shadow: 0 10px 25px rgba(25,22,21,0.16);
+    }
+
+    .btn-primary:hover { background: #2b2523; }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.55);
+      border-color: var(--line);
+      color: var(--text);
+    }
+
+    .hero {
+      padding: 64px 0 36px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 34px;
+      align-items: stretch;
+    }
+
+    .hero-copy,
+    .hero-card {
+      border: 1px solid rgba(25,22,21,0.08);
+      border-radius: 28px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+    }
+
+    .hero-copy {
+      padding: 48px 42px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 540px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.72rem;
+      color: var(--accent-deep);
+      margin-bottom: 24px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 34px;
+      height: 1px;
+      background: currentColor;
+      opacity: 0.7;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(3rem, 6vw, 5.4rem);
+      line-height: 0.94;
+      letter-spacing: -0.04em;
+    }
+
+    .hero-intro {
+      margin: 26px 0 0;
+      font-size: 1.04rem;
+      color: var(--muted);
+      max-width: 42ch;
+    }
+
+    .hero-meta {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin: 30px 0 34px;
+    }
+
+    .meta-card {
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.55);
+      border: 1px solid rgba(25,22,21,0.08);
+    }
+
+    .meta-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .meta-value {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .hero-note {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .hero-card {
+      position: relative;
+      padding: 18px;
+      overflow: hidden;
+      min-height: 540px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.82), rgba(255,255,255,0.72)),
+        radial-gradient(circle at 20% 20%, rgba(180,138,141,0.10), transparent 26%);
+    }
+
+    .hero-card::before,
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      border-radius: 999px;
+      filter: blur(4px);
+      opacity: 0.65;
+      pointer-events: none;
+    }
+
+    .hero-card::before {
+      width: 180px;
+      height: 180px;
+      background: radial-gradient(circle, rgba(233,191,174,0.55), transparent 70%);
+      right: -40px;
+      top: -30px;
+    }
+
+    .hero-card::after {
+      width: 220px;
+      height: 220px;
+      background: radial-gradient(circle, rgba(199,160,167,0.38), transparent 70%);
+      left: -80px;
+      bottom: -80px;
+    }
+
+    .hero-panel {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      border-radius: 22px;
+      overflow: hidden;
+      background: var(--panel-strong);
+      border: 1px solid rgba(25,22,21,0.08);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hero-panel-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 16px 18px;
+      border-bottom: 1px solid rgba(25,22,21,0.08);
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .dots {
+      display: flex;
+      gap: 8px;
+    }
+
+    .dots span {
+      width: 9px;
+      height: 9px;
+      border-radius: 999px;
+      background: rgba(25,22,21,0.18);
+    }
+
+    .cover-preview {
+      padding: 26px;
+      display: grid;
+      place-items: center;
+      flex: 1;
+    }
+
+    .cover-art {
+      width: min(100%, 410px);
+      aspect-ratio: 1 / 1.414286;
+      border-radius: 18px;
+      background:
+        linear-gradient(160deg, rgba(255,255,255,0.45), rgba(255,255,255,0.15)),
+        radial-gradient(circle at 15% 18%, rgba(120,47,50,0.55), transparent 18%),
+        radial-gradient(circle at 78% 82%, rgba(203,149,83,0.72), transparent 16%),
+        radial-gradient(circle at 22% 65%, rgba(238,201,123,0.55), transparent 18%),
+        linear-gradient(180deg, #f8f1ed 0%, #efe5df 100%);
+      border: 1px solid rgba(25,22,21,0.08);
+      box-shadow: 0 22px 60px rgba(38,27,22,0.16);
+      padding: 26px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cover-art::before {
+      content: "Autumn 2026";
+      position: absolute;
+      top: 22px;
+      left: 26px;
+      font-size: 0.75rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(25,22,21,0.52);
+    }
+
+    .cover-art::after {
+      content: "Elizabeth Style";
+      position: absolute;
+      bottom: 22px;
+      left: 26px;
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(25,22,21,0.56);
+    }
+
+    .cover-title {
+      position: absolute;
+      left: 26px;
+      right: 26px;
+      bottom: 58px;
+      font-family: var(--serif);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 0.92;
+      letter-spacing: -0.04em;
+      max-width: 8ch;
+    }
+
+    .cover-sub {
+      position: absolute;
+      left: 26px;
+      top: 72px;
+      max-width: 20ch;
+      color: rgba(25,22,21,0.68);
+      font-size: 0.94rem;
+    }
+
+    .section {
+      padding: 36px 0;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 22px;
+    }
+
+    .section-title {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 3vw, 3rem);
+      line-height: 0.98;
+      letter-spacing: -0.03em;
+      margin: 0;
+    }
+
+    .section-copy {
+      color: var(--muted);
+      max-width: 56ch;
+      margin: 0;
+    }
+
+    .editorial-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .embed-card,
+    .aside-card,
+    .signup-card,
+    .footer-card {
+      border: 1px solid rgba(25,22,21,0.08);
+      border-radius: 26px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+    }
+
+    .embed-card {
+      padding: 18px;
+    }
+
+    .embed-frame {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-top: 141.4286%;
+      overflow: hidden;
+      border-radius: 18px;
+      box-shadow: 0 14px 36px rgba(24,18,16,0.10);
+      background: #fff;
+      border: 1px solid rgba(25,22,21,0.08);
+    }
+
+    .embed-frame iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .embed-footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 16px 8px 4px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .aside {
+      display: grid;
+      gap: 18px;
+      position: sticky;
+      top: 92px;
+    }
+
+    .aside-card {
+      padding: 22px;
+    }
+
+    .aside-kicker {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--accent-deep);
+      margin-bottom: 12px;
+    }
+
+    .aside-title {
+      margin: 0 0 10px;
+      font-family: var(--serif);
+      font-size: 1.55rem;
+      line-height: 1.02;
+      letter-spacing: -0.03em;
+    }
+
+    .aside-card p,
+    .aside-card li {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .aside-list {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .aside-list li {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      gap: 10px;
+      align-items: start;
+    }
+
+    .aside-list span {
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      background: rgba(180,138,141,0.14);
+      color: var(--accent-deep);
+      font-size: 0.82rem;
+      margin-top: 1px;
+    }
+
+    .signup-wrap {
+      padding: 18px 0 70px;
+    }
+
+    .signup-card {
+      padding: 34px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 26px;
+      align-items: center;
+    }
+
+    .signup-title {
+      margin: 0 0 14px;
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(2rem, 3vw, 3rem);
+      line-height: 0.98;
+      letter-spacing: -0.03em;
+    }
+
+    .signup-copy {
+      margin: 0;
+      max-width: 44ch;
+      color: var(--muted);
+    }
+
+    .signup-form-shell {
+      background: rgba(255,255,255,0.62);
+      border: 1px solid rgba(25,22,21,0.08);
+      border-radius: 22px;
+      padding: 22px;
+    }
+
+    .signup-form {
+      display: grid;
+      gap: 12px;
+    }
+
+    .signup-form label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+    }
+
+    .signup-form input {
+      width: 100%;
+      min-height: 52px;
+      border-radius: 14px;
+      border: 1px solid rgba(25,22,21,0.14);
+      background: rgba(255,255,255,0.86);
+      padding: 0 16px;
+      font: inherit;
+      color: var(--text);
+    }
+
+    .signup-form input:focus {
+      outline: none;
+      border-color: rgba(141,100,103,0.7);
+      box-shadow: 0 0 0 4px rgba(180,138,141,0.12);
+    }
+
+    .signup-note {
+      margin: 2px 0 0;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    .footer {
+      padding-bottom: 40px;
+    }
+
+    .footer-card {
+      padding: 24px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 1100px) {
+      .hero-grid,
+      .editorial-layout,
+      .signup-card {
+        grid-template-columns: 1fr;
+      }
+
+      .aside {
+        position: static;
+      }
+
+      .hero-copy,
+      .hero-card {
+        min-height: auto;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .topbar-inner {
+        min-height: 64px;
+      }
+
+      .link-minimal { display: none; }
+
+      .hero {
+        padding-top: 28px;
+      }
+
+      .hero-copy,
+      .signup-card,
+      .aside-card,
+      .embed-card {
+        padding: 20px;
+      }
+
+      .hero-meta {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-actions,
+      .embed-footer,
+      .footer-card {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a class="brand" href="/">
+        <span class="brand-mark">ES</span>
+        <span>Elizabeth Style</span>
+      </a>
+      <div class="topbar-actions">
+        <a class="link-minimal" href="#editorial">Read the edit</a>
+        <a class="btn btn-primary" href="#subscribe">Subscribe</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Editorial issue</div>
+          <h1>Autumn 2026<br/>Style Edit</h1>
+          <p class="hero-intro">
+            Refined outfit direction, wardrobe notes, and a more elevated seasonal point of view. Built as an editorial issue rather than a generic shopping page.
+          </p>
+
+          <div class="hero-meta">
+            <div class="meta-card">
+              <div class="meta-label">Format</div>
+              <div class="meta-value">Editorial edit</div>
+            </div>
+            <div class="meta-card">
+              <div class="meta-label">Focus</div>
+              <div class="meta-value">Autumn wardrobe</div>
+            </div>
+            <div class="meta-card">
+              <div class="meta-label">Brand</div>
+              <div class="meta-value">Elizabeth Style</div>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#editorial">Open the issue</a>
+            <a class="btn btn-secondary" href="#subscribe">Join the list</a>
+          </div>
+
+          <div class="hero-note">
+            For readers who want a polished seasonal edit first, and the deeper recommendations by email.
+          </div>
+        </div>
+
+        <div class="hero-card" aria-hidden="true">
+          <div class="hero-panel">
+            <div class="hero-panel-top">
+              <div class="dots"><span></span><span></span><span></span></div>
+              <div>Autumn 2026 issue preview</div>
+            </div>
+            <div class="cover-preview">
+              <div class="cover-art">
+                <div class="cover-sub">A seasonal edit shaped around softness, structure, texture, and polished ease.</div>
+                <div class="cover-title">Becoming Autumn</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="editorial">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">The issue</h2>
+            <p class="section-copy">The Canva design is embedded inside an editorial layout so the page feels owned, branded, and intentional rather than like a raw external file.</p>
+          </div>
+        </div>
+
+        <div class="editorial-layout">
+          <article class="embed-card">
+            <div class="embed-frame">
+              <iframe
+                loading="lazy"
+                src="https://www.canva.com/design/DAHEFsXe29g/SgxzZ9mty0mb8T1yWG5voA/watch?embed"
+                allowfullscreen="allowfullscreen"
+                allow="fullscreen">
+              </iframe>
+            </div>
+            <div class="embed-footer">
+              <div>Copy of Email Copy 2026 THE GLOSS Autumn</div>
+              <a class="btn btn-secondary" href="https://www.canva.com/design/DAHEFsXe29g/SgxzZ9mty0mb8T1yWG5voA/watch?utm_content=DAHEFsXe29g&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Open in Canva</a>
+            </div>
+          </article>
+
+          <aside class="aside">
+            <div class="aside-card">
+              <div class="aside-kicker">Season note</div>
+              <h3 class="aside-title">A cleaner frame around the content</h3>
+              <p>
+                The design should sit inside a page that feels like a fashion publication. This raises perceived quality and makes the email sign-up feel like part of the editorial experience.
+              </p>
+            </div>
+
+            <div class="aside-card">
+              <div class="aside-kicker">Inside this edit</div>
+              <ul class="aside-list">
+                <li><span>1</span><div>Wardrobe direction for Autumn 2026</div></li>
+                <li><span>2</span><div>Refined styling cues rather than generic trend dumping</div></li>
+                <li><span>3</span><div>A branded destination that can later support affiliate links and product modules</div></li>
+              </ul>
+            </div>
+
+            <div class="aside-card">
+              <div class="aside-kicker">Next layer</div>
+              <h3 class="aside-title">Add product links later</h3>
+              <p>
+                Once the issue structure is stable, add curated shop links or article excerpts underneath the embed rather than trying to force all monetisation into version one.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="signup-wrap" id="subscribe">
+      <div class="shell">
+        <div class="signup-card">
+          <div>
+            <div class="eyebrow" style="margin-bottom:18px;">Private list</div>
+            <h2 class="signup-title">Join for the next edit</h2>
+            <p class="signup-copy">
+              Get the next seasonal issue, selected recommendations, and future wardrobe notes directly by email. This block can stay as a visual placeholder until the Mailchimp form is ready, or be replaced with your live embed.
+            </p>
+          </div>
+
+          <div class="signup-form-shell">
+            <form class="signup-form" action="#" method="post">
+              <div>
+                <label for="first-name">First name</label>
+                <input id="first-name" name="first-name" type="text" placeholder="Elizabeth" />
+              </div>
+              <div>
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" />
+              </div>
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+              <p class="signup-note">Replace this form with your Mailchimp embed when ready.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell">
+      <div class="footer-card">
+        <div>Elizabeth Style</div>
+        <div>Autumn 2026 Style Edit</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

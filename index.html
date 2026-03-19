@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EK Style — A weekly edit of fashion, colour and confidence to inspire your personal style." />
+  <title>EK Style</title>
+  <style>
+    :root {
+      --bg: #373536;
+      --text: #f5f1eb;
+      --muted: rgba(245, 241, 235, 0.82);
+      --button-bg: #f5f1eb;
+      --button-text: #373536;
+      --button-border: rgba(245, 241, 235, 0.18);
+      --focus: rgba(245, 241, 235, 0.35);
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 760px;
+      text-align: center;
+    }
+
+    .brand {
+      margin: 0 0 18px;
+      font-size: 14px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(44px, 9vw, 88px);
+      line-height: 0.95;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .copy {
+      margin: 24px auto 0;
+      max-width: 620px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: clamp(17px, 2.2vw, 21px);
+      line-height: 1.6;
+      color: var(--muted);
+    }
+
+    .cta-wrap {
+      margin-top: 34px;
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 15px 28px;
+      border-radius: 999px;
+      background: var(--button-bg);
+      color: var(--button-text);
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      border: 1px solid var(--button-border);
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+
+    .cta:hover {
+      transform: translateY(-1px);
+      opacity: 0.96;
+    }
+
+    .cta:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 4px;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 20px;
+      }
+
+      .brand {
+        margin-bottom: 16px;
+      }
+
+      .copy {
+        margin-top: 20px;
+      }
+
+      .cta-wrap {
+        margin-top: 28px;
+      }
+
+      .cta {
+        width: 100%;
+        max-width: 320px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <p class="brand">EK Style</p>
+    <h1>STYLE,<br>EDITED.</h1>
+    <p class="copy">A weekly edit of fashion, colour and confidence to inspire your personal style.</p>
+    <div class="cta-wrap">
+      <a class="cta" href="https://join.elizabeth.style/">Join The Style Edit</a>
+    </div>
+  </main>
+</body>
+</html>

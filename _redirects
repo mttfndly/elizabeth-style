@@ -1,0 +1,12 @@
+# Issue 7 — accept any reasonable spelling of the URL from emails and socials
+/Issue_7      /issue-7  301
+/Issue_7/*    /issue-7/:splat  301
+/issue_7      /issue-7  301
+/issue_7/*    /issue-7/:splat  301
+/Issue-7      /issue-7  301
+/Issue-7/*    /issue-7/:splat  301
+/issue7       /issue-7  301
+/Issue7       /issue-7  301
+/ISSUE-7      /issue-7  301
+/magazine     /issue-7  302
+/winter-2026  /issue-7  301

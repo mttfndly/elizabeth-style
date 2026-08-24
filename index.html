@@ -99,6 +99,13 @@ a.post .t{font:600 16px/1.32 Montserrat,sans-serif;letter-spacing:.02em}
 footer{padding:44px 0 56px;text-align:center;color:var(--soft);font-size:14px;border-top:1px solid var(--rule)}
 footer .fl{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;margin-bottom:18px}
 footer a{color:var(--soft)}
+
+.ctarow{display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center;margin:0}
+@media(max-width:760px){.ctarow{justify-content:center}}
+.cta2{display:inline-block;text-decoration:none;color:var(--accent);border:1px solid var(--rule);
+ padding:14px 26px;border-radius:999px;font:500 14px/1 Montserrat,sans-serif;
+ letter-spacing:.12em;text-transform:uppercase}
+.cta2:hover{border-color:var(--accent);background:#f3f7f9;color:var(--accent)}
 </style>
 </head>
 <body>
@@ -108,6 +115,7 @@ footer a{color:var(--soft)}
   <nav>
     <a class="txt" href="#magazine">Magazine</a>
     <a class="txt" href="#latest">The Weekly Edit</a>
+    <a class="txt" href="/issues">Back Issues</a>
     <a class="btn" href="#subscribe">Subscribe</a>
   </nav>
 </div></header>
@@ -133,7 +141,7 @@ footer a{color:var(--soft)}
       <p class="meta">Issue 7 · Current</p>
       <h3>Winter 2026</h3>
       <p>Twenty-nine pages on colour, texture and presence, plus 53 pieces from 15 Australian labels. Read it on your phone or your desktop.</p>
-      <a class="cta" href="/issue-7">Read Issue 7 &rsaquo;</a>
+      <p class="ctarow"><a class="cta" href="/issue-7">Read Issue 7 &rsaquo;</a><a class="cta2" href="/issues">Back issues &rsaquo;</a></p>
     </div>
   </div>
 
@@ -187,6 +195,7 @@ footer a{color:var(--soft)}
 <footer><div class="wrap">
   <div class="fl">
     <a href="/issue-7">Winter 2026 issue</a>
+    <a href="/issues">Back issues</a>
     <a href="https://theedit.elizabeth.style/">Archive</a>
     <a href="https://www.instagram.com/byelizabeth_style" rel="me noopener" target="_blank">Instagram</a>
     <a href="mailto:elizabeth@elizabeth.style">Contact</a>
@@ -199,7 +208,7 @@ footer a{color:var(--soft)}
 {"@type":"WebSite","@id":"https://elizabeth.style/#site","url":"https://elizabeth.style/","name":"The Style Edit by Elizabeth","inLanguage":"en-AU","publisher":{"@id":"https://elizabeth.style/#org"}},
 {"@type":"Organization","@id":"https://elizabeth.style/#org","name":"EK Style","url":"https://elizabeth.style/","logo":"https://elizabeth.style/favicon.png","email":"elizabeth@elizabeth.style","sameAs":["https://www.instagram.com/byelizabeth_style"]},
 {"@type":"Periodical","name":"The Style Edit","url":"https://elizabeth.style/","inLanguage":"en-AU","publisher":{"@id":"https://elizabeth.style/#org"},
- "hasPart":{"@type":"PublicationIssue","issueNumber":7,"name":"The Style Edit — Winter 2026","url":"https://elizabeth.style/issue-7","datePublished":"2026-08-13"}}
+ "hasPart":[{"@type":"PublicationIssue","issueNumber":7,"name":"The Style Edit — Winter 2026","url":"https://elizabeth.style/issue-7"},{"@type":"PublicationIssue","issueNumber":6,"name":"The Style Edit — Autumn 2026","url":"https://elizabeth.style/issue-6"},{"@type":"PublicationIssue","issueNumber":5,"name":"The Style Edit — Summer 2025","url":"https://elizabeth.style/issue-5"},{"@type":"PublicationIssue","issueNumber":4,"name":"The Style Edit — Spring 2025","url":"https://elizabeth.style/issue-4"},{"@type":"PublicationIssue","issueNumber":3,"name":"The Style Edit — Winter 2025","url":"https://elizabeth.style/issue-3"},{"@type":"PublicationIssue","issueNumber":2,"name":"The Style Edit — Autumn 2025","url":"https://elizabeth.style/issue-2"},{"@type":"PublicationIssue","issueNumber":1,"name":"The Style Edit — Summer 2024","url":"https://elizabeth.style/issue-1"}]}
 ]}
 </script>
 </body></html>

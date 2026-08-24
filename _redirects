@@ -1,4 +1,4 @@
-# Issue 7 — accept any reasonable spelling of the URL from emails and socials
+# Issue 7 — accept any reasonable spelling from emails and socials
 /Issue_7      /issue-7  301
 /Issue_7/*    /issue-7/:splat  301
 /issue_7      /issue-7  301
@@ -8,5 +8,82 @@
 /issue7       /issue-7  301
 /Issue7       /issue-7  301
 /ISSUE-7      /issue-7  301
-/magazine     /issue-7  302
 /winter-2026  /issue-7  301
+
+# Issue 6 — accept any reasonable spelling from emails and socials
+/Issue_6      /issue-6  301
+/Issue_6/*    /issue-6/:splat  301
+/issue_6      /issue-6  301
+/issue_6/*    /issue-6/:splat  301
+/Issue-6      /issue-6  301
+/Issue-6/*    /issue-6/:splat  301
+/issue6       /issue-6  301
+/Issue6       /issue-6  301
+/ISSUE-6      /issue-6  301
+/autumn-2026  /issue-6  301
+
+# Issue 5 — accept any reasonable spelling from emails and socials
+/Issue_5      /issue-5  301
+/Issue_5/*    /issue-5/:splat  301
+/issue_5      /issue-5  301
+/issue_5/*    /issue-5/:splat  301
+/Issue-5      /issue-5  301
+/Issue-5/*    /issue-5/:splat  301
+/issue5       /issue-5  301
+/Issue5       /issue-5  301
+/ISSUE-5      /issue-5  301
+/summer-2025  /issue-5  301
+
+# Issue 4 — accept any reasonable spelling from emails and socials
+/Issue_4      /issue-4  301
+/Issue_4/*    /issue-4/:splat  301
+/issue_4      /issue-4  301
+/issue_4/*    /issue-4/:splat  301
+/Issue-4      /issue-4  301
+/Issue-4/*    /issue-4/:splat  301
+/issue4       /issue-4  301
+/Issue4       /issue-4  301
+/ISSUE-4      /issue-4  301
+/spring-2025  /issue-4  301
+
+# Issue 3 — accept any reasonable spelling from emails and socials
+/Issue_3      /issue-3  301
+/Issue_3/*    /issue-3/:splat  301
+/issue_3      /issue-3  301
+/issue_3/*    /issue-3/:splat  301
+/Issue-3      /issue-3  301
+/Issue-3/*    /issue-3/:splat  301
+/issue3       /issue-3  301
+/Issue3       /issue-3  301
+/ISSUE-3      /issue-3  301
+/winter-2025  /issue-3  301
+
+# Issue 2 — accept any reasonable spelling from emails and socials
+/Issue_2      /issue-2  301
+/Issue_2/*    /issue-2/:splat  301
+/issue_2      /issue-2  301
+/issue_2/*    /issue-2/:splat  301
+/Issue-2      /issue-2  301
+/Issue-2/*    /issue-2/:splat  301
+/issue2       /issue-2  301
+/Issue2       /issue-2  301
+/ISSUE-2      /issue-2  301
+/autumn-2025  /issue-2  301
+
+# Issue 1 — accept any reasonable spelling from emails and socials
+/Issue_1      /issue-1  301
+/Issue_1/*    /issue-1/:splat  301
+/issue_1      /issue-1  301
+/issue_1/*    /issue-1/:splat  301
+/Issue-1      /issue-1  301
+/Issue-1/*    /issue-1/:splat  301
+/issue1       /issue-1  301
+/Issue1       /issue-1  301
+/ISSUE-1      /issue-1  301
+/summer-2024  /issue-1  301
+
+# Current issue and the archive
+/magazine     /issue-7  302
+/current      /issue-7  302
+/back-issues  /issues  301
+/archive      /issues  301

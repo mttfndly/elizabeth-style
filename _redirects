@@ -1,3 +1,15 @@
+# Issue 8 — accept any reasonable spelling from emails and socials
+/Issue_8      /issue-8  301
+/Issue_8/*    /issue-8/:splat  301
+/issue_8      /issue-8  301
+/issue_8/*    /issue-8/:splat  301
+/Issue-8      /issue-8  301
+/Issue-8/*    /issue-8/:splat  301
+/issue8       /issue-8  301
+/Issue8       /issue-8  301
+/ISSUE-8      /issue-8  301
+/spring-2026  /issue-8  301
+
 # Issue 7 — accept any reasonable spelling from emails and socials
 /Issue_7      /issue-7  301
 /Issue_7/*    /issue-7/:splat  301
@@ -83,7 +95,7 @@
 /summer-2024  /issue-1  301
 
 # Current issue and the archive
-/magazine     /issue-7  302
-/current      /issue-7  302
+/magazine     /issue-8  302
+/current      /issue-8  302
 /back-issues  /issues  301
 /archive      /issues  301

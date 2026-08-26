@@ -158,9 +158,10 @@ vp.addEventListener('touchmove',e=>{if(!tst||!isIA())return;
  const p=tXY(e),dx=p.x-tst.x,dy=p.y-tst.y;tst.lx=p.x;
  if(!tst.axis){if(Math.abs(dx)>8||Math.abs(dy)>8)tst.axis=Math.abs(dx)>Math.abs(dy)?'x':'y';else return;}
  if(tst.axis==='x'){if(Math.abs(dx)>18){if(e.cancelable)e.preventDefault();applyStrip(dx,false);}return;}
- if(!tst.sc)return;
- if(!tst.checked&&Math.abs(dy)>24){tst.checked=true;if(tst.sc.scrollTop===tst.top0)tst.manual=true;}
- if(tst.manual){tst.sc.scrollTop=tst.top0-dy;if(e.cancelable)e.preventDefault();}},{passive:false});
+ /* Vertical is left to the browser: the old manual branch drove scrollTop 1:1
+    from the finger and preventDefault'd every move, which killed fling momentum
+    on a fast flick. touch-action:pan-y scrolls natively. */
+ return;},{passive:false});
 function tEnd(){if(!tst)return;
  if(tst.axis==='x'){const dx=tst.lx-tst.x;if(Math.abs(dx)>W*0.16)go(dx<0?i+1:i-1);else applyStrip(0,true);}
  tst=null;}
